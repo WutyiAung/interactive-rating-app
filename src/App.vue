@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <InteractiveRating></InteractiveRating>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import InteractiveRating from './components/InteractiveRating'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { InteractiveRating },
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+:root{
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217,12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --medium-grey-2: hsl(216, 12%, 25%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
 }
+*{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  font-size: 15px;
+}
+
 </style>
